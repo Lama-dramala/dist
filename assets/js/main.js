@@ -173,7 +173,6 @@ document.addEventListener('DOMContentLoaded', function () {
         const owl = $('#order_carousel-documents');
         owl.owlCarousel({
             items: 3,
-            loop: true,
             nav: false,
             autoplay: true,
             autoplayTimeout: 6000,
@@ -211,7 +210,9 @@ document.addEventListener('DOMContentLoaded', function () {
             owl.trigger('next.owl.carousel');
         })
     });
-
+    Fancybox.bind("[data-fancybox]", {
+        // Your custom options
+      });
 
     // Лицензии
     $(document).ready(function(){
@@ -219,7 +220,6 @@ document.addEventListener('DOMContentLoaded', function () {
         const owl = $('#carousel-licenses');
         owl.owlCarousel({
             items: 4,
-            loop: true,
             nav: false,
             autoplay: true,
             autoplayTimeout: 6000,
@@ -228,7 +228,6 @@ document.addEventListener('DOMContentLoaded', function () {
             responsive: {
                 0: {
                     items: 1,
-                    loop: true
                 
                 },
                 600: {
