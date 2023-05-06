@@ -2112,6 +2112,9 @@ Theme Name: Fabrika spravok
   }
 }
 /* Информация о документе */
+.hidden{
+  display: none;
+}
 .information .container{
   margin-bottom: 50px;
   font-size: 14px;
@@ -2198,3 +2201,10 @@ Theme Name: Fabrika spravok
     margin: 15px auto;
   }
 }
+.licenses__slider-item{
+  display: flex;
+  justify-content: center;
+}
+
+
+
