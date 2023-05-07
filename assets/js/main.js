@@ -168,48 +168,6 @@ document.addEventListener('DOMContentLoaded', function () {
             owl.trigger('next.owl.carousel');
         })
     });
-    $(document).ready(function(){
-
-        const owl = $('#order_carousel-documents');
-        owl.owlCarousel({
-            items: 3,
-            nav: false,
-            autoplay: true,
-            autoplayTimeout: 6000,
-            smartSpeed: 2000,
-            margin: 10,
-            responsive: {
-                0: {
-                    items: 1,
-                    loop: true
-                
-                },
-                600: {
-                    items: 1,
-                    
-                },
-                900: {
-                    items: 2,
-                    
-                },
-                1200: {
-                    item: 3
-                }
-            }
-            
-        });
-    
-        const prev = $('.sliderPrev-projects');
-        const next = $('.sliderNext-projects');
-    
-        prev.click(function() {
-            owl.trigger('prev.owl.carousel');
-        })
-    
-        next.click(function() {
-            owl.trigger('next.owl.carousel');
-        })
-    });
     Fancybox.bind("[data-fancybox]", {
         // Your custom options
       });
@@ -220,6 +178,7 @@ document.addEventListener('DOMContentLoaded', function () {
         const owl = $('#carousel-licenses');
         owl.owlCarousel({
             items: 4,
+            loop: true,
             nav: false,
             autoplay: true,
             autoplayTimeout: 6000,
@@ -228,6 +187,7 @@ document.addEventListener('DOMContentLoaded', function () {
             responsive: {
                 0: {
                     items: 1,
+                    loop: true,
                 
                 },
                 600: {
