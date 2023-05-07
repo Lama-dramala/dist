@@ -2201,9 +2201,15 @@ Theme Name: Fabrika spravok
     margin: 15px auto;
   }
 }
+.documents__slider-item a{
+  width: 100%;
+}
 .licenses__slider-item{
   display: flex;
   justify-content: center;
+}
+.licenses__slider-item a{
+  width: 100%;
 }
 
 
